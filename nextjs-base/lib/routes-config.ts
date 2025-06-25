@@ -10,41 +10,26 @@ export type EachRoute = {
 
 export const ROUTES: EachRoute[] = [
   {
-    title: "Getting Started",
-    href: "/getting-started",
+    title: "NXBSC",
+    href: "/nxbsc",
     noLink: true,
     items: [
       { title: "Introduction", href: "/introduction" },
+      { title: "FAQ", href: "/faq" },
+      { title: "Errors", href: "/errors" },
       {
-        title: "Installation",
-        href: "/installation",
-      },
-      { title: "Quick Start Guide", href: "/quick-start-guide" },
-      {
-        title: "Project Structure",
-        href: "/project-structure",
-      },
-      {
-        title: "Components",
-        href: "/components",
+        title: "Commands",
+        href: "/commands",
+        noLink: true,
         items: [
-          { title: "Stepper", href: "/stepper" },
-          { title: "Tabs", href: "/tabs" },
-          { title: "Note", href: "/note" },
-          { title: "Code Block", href: "/code-block" },
-          { title: "Image & Link", href: "/image-link" },
-          { title: "File System", href: "/file-system", tag: "New" },
-          { title: "Custom", href: "/custom" },
-        ],
-      },
-      { title: "Internationalization", href: "/i18n" },
-      { title: "Algolia Search", href: "/algolia-search", tag: "New" },
-      { title: "Themes", href: "/themes" },
-      {
-        title: "Customize",
-        href: "/customize",
-      },
-    ],
+          { title: "Administrators", href: "/administrators" },
+          { title: "Developers", href: "/developers" },
+          { title: "Owner", href: "/owner" },
+          { title: "Staff", href: "/staff" },
+          { title: "Users", href: "/users" },
+        ]
+      }
+    ]
   },
 ];
 
