@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/contexts/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { Space_Mono, Space_Grotesk } from "next/font/google";
 import { Footer } from "@/components/footer";
+import { Analytics } from "@vercel/analytics/next"
 import "@/styles/globals.css";
 
 const sansFont = Space_Grotesk({
@@ -44,6 +45,7 @@ export default function RootLayout({
         className={`${sansFont.variable} ${monoFont.variable} font-regular antialiased tracking-wide`}
         suppressHydrationWarning
       >
+        <Analytics/>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
